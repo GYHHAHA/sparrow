@@ -1,0 +1,1 @@
+for /r "cmake-build-debug" %%i in (*.pyd) do copy %%i /y sparrow\_lib

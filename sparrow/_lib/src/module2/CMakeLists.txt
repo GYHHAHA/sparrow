@@ -1,0 +1,7 @@
+include_directories(C:\\Users\\gyh\\anaconda3\\envs\\cyn\\lib\\site-packages\\pybind11\\include)
+include_directories(C:\\Users\\gyh\\anaconda3\\envs\\cyn\\include)
+link_directories(C:\\Users\\gyh\\anaconda3\\envs\\cyn\\libs)
+aux_source_directory(. DIR_SRCS)
+add_library(module2 SHARED ${DIR_SRCS})
+set_target_properties(module2 PROPERTIES SUFFIX ".pyd")
+target_link_libraries(module2)
