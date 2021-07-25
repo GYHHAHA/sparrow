@@ -4,7 +4,7 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(module1, m) {
+PYBIND11_MODULE(OtherModule, m) {
     m.def("add", my_add);
     m.def("minus", my_minus);
 }
